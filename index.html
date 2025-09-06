@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="mobileText">*Scroll down for results after selecting your choice</p>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <div id="options" class="options">
+        <button id="rock" class="buttons">🪨<br>ROCK</button>
+        <button id="paper" class="buttons">📄<br>PAPER</button>
+        <button id="scissor" class="buttons">✂️<br>SCISSORS</button>
+        
+    </div>
+    <br>
+    <div class="resultDisplay" id="resultDisplay">
+        <div class="choiceDisplay">
+            <div class="wrapper" id="userDisplay">
+                <div class="displayOpts" id="uButton"></div>
+                <mark>You</mark>
+            </div>
+            <span>VS</span>
+            <div class="wrapper" id="computerDisplay">
+                <div class="displayOpts" id="cButton"></div>
+                <mark>Bot</mark>
+            </div>
+        </div>
+        <div class="textbox" id="textbox"></div>
+        <div class="scores" id="scores">
+            <h3 id="userScore">You - 0</h3>
+            <h3 id="computerScore">Bot - 0</h3>
+        </div>
+    </div>
+    <button id="reset" class="reset" onclick="defaultSettings()">RESET</button>
+    <footer>
+        <p>&copy; Made By M. Bhargav Chowdary. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

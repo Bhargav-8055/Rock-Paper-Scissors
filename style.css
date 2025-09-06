@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mobileText{
+    display: none;
+}
+
+body{
+    background: linear-gradient(to bottom right, #000000, #282843);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+
+h1{
+    font-size: 3.5rem;
+    color: #FFD700;
+    font-family: helvetica;
+    text-align: center;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+.buttons{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to top left, #000000, #282843);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    box-shadow: 3.5px 0px 5px #FFD700;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.15s linear;
+    font-size: 1.75rem;
+    border: none;
+}
+
+
+.buttons:hover{
+    box-shadow: 0px 0px 15px #d4af37, 0px 0px 30px #d4af37;
+    color: #1c1c1c;
+    background: linear-gradient(145deg, antiquewhite, white);
+}
+
+.emoji{
+    font-size: 4rem;
+}
+
+.title{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.resultDisplay{
+    box-shadow: 0px 0px 10px white, 0px 0px 20px antiquewhite,  0px 0px 40px antiquewhite, 0px 0px 40px antiquewhite;
+    height: 40rem;
+    width: 40rem;
+    background-color: antiquewhite;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+mark{
+    background-color: white;
+    width: 8.5rem;
+    margin-top: 0.50rem;
+    font-size: 1.9rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span{
+    font-size: 3.7rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.choiceDisplay{
+    height: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper{
+    margin-top: 2.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    width: 11rem;
+}
+
+.displayOpts{
+    background: linear-gradient(to top left, #000000, #282843);
+    height: 9rem;
+    width: 9rem;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.75rem;
+    box-shadow: 3.5px 0px 5px blanchedalmond
+}
+
+
+.wrapper span{
+    margin-top: 0.75rem;
+    font-size: 1.9rem;
+}
+
+.textbox{
+    background: linear-gradient(to top left, #000000, #282843);
+    width: 24rem;
+    height: 10rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    box-shadow: 3.5px 0px 5px blanchedalmond
+}
+
+.green{
+    color: greenyellow;
+}
+
+.red{
+    color: red;
+}
+
+.gray{
+    color: gray;
+}
+
+.scores{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 24rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+    border-radius: 1.75rem;
+    background: linear-gradient(to top left, #000000, #282843);
+    box-shadow: 3.5px 0px 5px blanchedalmond;
+}
+
+.scores h3{
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 2rem;
+    gap: 3rem;
+}
+
+.reset{
+    margin-top: 3rem;
+    font-size: 3rem;
+    padding: 2rem 10rem;
+    background-color: hsl(36, 100%, 70%);
+    cursor: pointer;
+    border-radius: 2.75rem;
+    text-align: center;
+}
+
+.reset:active{
+    background-color: hsl(36, 100%, 80%);;
+}
+
+footer{
+    color: #FFD700;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width:525px){
+    .options{
+        flex-direction: column;
+    }
+
+    #rock, #paper, #scissor{
+        margin-bottom: 1.5rem;
+    }
+    .mobileText{
+        text-align: center;
+        color: antiquewhite;
+        display: block;
+        margin-bottom: 10px;
+        font-size: small;
+    }
+
+    .resultDisplay{
+        width: 100%;
+        border-radius: 0rem;
+    }
+
+    .choiceDisplay,.textbox,.scores{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .choiceDisplay span{
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width:665px){
+    .scores{
+        flex-direction: column;
+    }
+
+    .resultDisplay{
+        width: 100%;
+
+    }
+
+    .reset, footer{
+        width: 90%;
+        padding: 2rem;
+    }
+}
